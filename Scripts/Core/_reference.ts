@@ -24,4 +24,3 @@
 /// <reference path="../scenes/scene14.ts" />
 /// <reference path="../scenes/scene15.ts" />
 
-/// <reference path="../scenes/gameover.ts" />
