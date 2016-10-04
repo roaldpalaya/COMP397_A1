@@ -2,7 +2,7 @@ module scenes {
     export class Scene4 extends objects.Scene {
 
         // PRIVATE VARIABLES
-        private _gameLabel : objects.Label;
+        
         private _scene8Button : objects.Button;
         private _scene9Button : objects.Button;
         private _bg:createjs.Bitmap;
@@ -18,9 +18,7 @@ module scenes {
             //BG
             this._bg=new createjs.Bitmap(assets.getResult("Screen4"));
             this.addChild(this._bg);
-            // Create Label for scene and add to Game Scene container
-            this._gameLabel = new objects.Label("SCENE 4", "60px Consolar", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
-            this.addChild(this._gameLabel);
+            
             //Create button for scene 8
             this._scene8Button=new objects.Button("Choice1",config.Screen.CENTER_X-200, config.Screen.CENTER_Y + 145);
             this.addChild(this._scene8Button);
