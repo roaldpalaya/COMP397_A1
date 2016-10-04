@@ -1,6 +1,10 @@
 /*
     Scene  module to group all user-defined scenes  under the same "namespace aka module"
     Game scene that contains all assets and functionality associated with the game itself
+    
+    Roald Russel T. Palaya
+    300714999
+    Last Modified: Ocober 4,2016
 */
 
 module scenes {
