@@ -14,9 +14,9 @@ var scenes;
         Scene14.prototype.start = function () {
             // Add objects to the scene
             console.log("Scene 14 started");
-            // Create Label for scene and add to Game Scene container
-            this._gameLabel = new objects.Label("SCENE 14", "60px Consolar", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
-            this.addChild(this._gameLabel);
+            //BG
+            this._bg = new createjs.Bitmap(assets.getResult("Screen14"));
+            this.addChild(this._bg);
             //Create button for main scene
             this._resetButton = new objects.Button("Back", config.Screen.CENTER_X, config.Screen.CENTER_Y + 145);
             this.addChild(this._resetButton);

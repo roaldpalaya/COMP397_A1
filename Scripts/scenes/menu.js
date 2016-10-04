@@ -17,6 +17,13 @@ var scenes;
         }
         Menu.prototype.start = function () {
             console.log("Menu Scene Started");
+            //BG
+            this._bg = new createjs.Bitmap(assets.getResult("Menu"));
+            this.addChild(this._bg);
+            //Menu text
+            // Create Label for scene and add to Game Scene container
+            this._gameLabel = new objects.Label("Treasure Adventure", "60px Consolar", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
+            this.addChild(this._gameLabel);
             // Add button to scene. Register for click callback function
             this._menuButton = new objects.Button("Start", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
             this.addChild(this._menuButton);
