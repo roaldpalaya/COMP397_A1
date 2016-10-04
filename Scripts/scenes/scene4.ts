@@ -5,6 +5,7 @@ module scenes {
         private _gameLabel : objects.Label;
         private _scene8Button : objects.Button;
         private _scene9Button : objects.Button;
+        private _bg:createjs.Bitmap;
 
         constructor() {
             super();
@@ -14,7 +15,9 @@ module scenes {
         public start() : void {
             // Add objects to the scene
             console.log("Scene 4 started");
-
+            //BG
+            this._bg=new createjs.Bitmap(assets.getResult("Screen4"));
+            this.addChild(this._bg);
             // Create Label for scene and add to Game Scene container
             this._gameLabel = new objects.Label("SCENE 4", "60px Consolar", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
             this.addChild(this._gameLabel);

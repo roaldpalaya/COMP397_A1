@@ -9,8 +9,10 @@ module scenes {
         // Private instance variables
         // Label or bitmap
         // Button 
+        private _gameLabel : objects.Label;
         private _menuButton : objects.Button;
         private _menuButtonGameOver: objects.Button;
+        private _bg:createjs.Bitmap;
 
         // Menu Class Contructor
         constructor()
@@ -20,7 +22,14 @@ module scenes {
 
         public start() : void {
             console.log("Menu Scene Started");
+            //BG
+            this._bg=new createjs.Bitmap(assets.getResult("Menu"));
+            this.addChild(this._bg);
 
+            //Menu text
+            // Create Label for scene and add to Game Scene container
+            this._gameLabel = new objects.Label("Treasure Adventure", "60px Consolar", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
+            this.addChild(this._gameLabel);
             // Add button to scene. Register for click callback function
             this._menuButton = new objects.Button("Start", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
             this.addChild(this._menuButton);

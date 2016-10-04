@@ -32,7 +32,25 @@ var assetData:objects.Asset[] = [
     {id: "Back", src:"../../Assets/images/Back.png"},
     {id: "BG", src:"../../Assets/images/images.jpg"},
     {id: "Choice1", src:"../../Assets/images/img1.png"},
-    {id: "Choice2", src:"../../Assets/images/img2.png"}
+    {id: "Choice2", src:"../../Assets/images/img2.png"},
+
+    {id: "Menu", src:"../../Assets/images/map.jpg"},
+    {id: "Main", src:"../../Assets/images/1.jpg"},
+    {id: "Screen2", src:"../../Assets/images/2.jpg"},
+    {id: "Screen3", src:"../../Assets/images/3.jpg"},
+    {id: "Screen4", src:"../../Assets/images/4.jpg"},
+    {id: "Screen5", src:"../../Assets/images/5.jpg"},
+    {id: "Screen6", src:"../../Assets/images/6.jpg"},
+    {id: "Screen7", src:"../../Assets/images/7.jpg"},
+    {id: "Screen8", src:"../../Assets/images/8.jpg"},
+    {id: "Screen9", src:"../../Assets/images/9.jpg"},
+    {id: "Screen10", src:"../../Assets/images/10.jpg"},
+    {id: "Screen11", src:"../../Assets/images/11.jpg"},
+    {id: "Screen12", src:"../../Assets/images/12.jpg"},
+    {id: "Screen13", src:"../../Assets/images/13.jpg"},
+    {id: "Screen14", src:"../../Assets/images/14.jpg"},
+    {id: "Screen15", src:"../../Assets/images/15.jpg"}
+
 ];
 
 function preload() {
